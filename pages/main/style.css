@@ -10,10 +10,17 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  /* position: relative; */
+}
+
+.container {
+  max-width: 160rem;
 }
 
 header {
   background-color: black;
+  position: absolute;
+  width: 100%;
 }
 
 .logo-container {
@@ -44,6 +51,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 99;
 }
 
 .main-nav {
@@ -66,4 +74,57 @@ p {
   position: absolute;
   bottom: 10%;
   left: 10%;
+}
+
+.panda-background {
+ position: relative;
+}
+
+.orange-background {
+  position: absolute;
+  width: 46.5rem;
+  height: 46.5rem;
+  border-radius: 50%;
+  background-color: #F9804B;
+  top: 0;
+  right: 0;
+  transform: translate(-70%, 20%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.orange-text {
+  font-size: 10.65rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.75;
+  color: #fff;
+  position: absolute;
+  left: 8rem;
+  top: 7rem;
+}
+
+.orange-text span {
+  color: #FFEE2E;
+}
+
+.watch-me {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 29.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #F9804B;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  bottom: -12rem;
+}
+
+.giant-panda {
+  width: 100%;
 }
