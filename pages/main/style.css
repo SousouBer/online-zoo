@@ -13,8 +13,9 @@ body {
   /* position: relative; */
 }
 
-.container {
-  max-width: 160rem;
+.section-container {
+  max-width: 116.1rem;
+  margin: 0 auto;
 }
 
 header {
@@ -127,4 +128,146 @@ p {
 
 .giant-panda {
   width: 100%;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  padding: 14rem;
+  position: relative;
+}
+
+.section-2 p {
+  color: black;
+
+}
+
+.info {
+  display: flex;
+  gap: 9rem;
+}
+
+.info-details h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.info-details p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.info-1 {
+  margin: 1rem 0;
+}
+
+.info-details h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 4rem 0;
+}
+
+.flower-foto-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+  padding: 2rem;
+  position: relative;
+}
+
+.pets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 2rem;
+  position: relative;
+}
+
+.pet {
+  max-width: 36.6rem;
+  border: 1px solid #FA6F32;
+  border-radius: 5px;
+}
+
+.pet-img {
+  width: 100%;
+}
+
+.pet-description h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.pet-description p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: black
+}
+/* .pet-description {
+  padding: 1rem;
+} */
+
+.pet-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.choose-pet {
+  background-color: #FE9013;
+  color: #fff;
+  border: none;
+  padding: 1.5rem 5.5rem;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.palm, .strelitzia {
+  position: absolute;
+}
+
+.palm {
+  bottom: 0;
+  left: 0;
+}
+.strelitzia {
+  right: 0;
+  bottom: 0;
+}
+
+.btn-left, .btn-right {
+  width: 6.3rem;
+  height: 6.3rem;
+  background-color: #FE9013;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.btn-left {
+  transform: translate(-125%, -50%);
+  left: 0;
+}
+
+.btn-right {
+  transform: translate(125%, -50%);
+  right: 0;
 }
