@@ -165,7 +165,7 @@ p {
 .info-details h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  margin: 4rem 0;
+  margin: 5rem 0;
 }
 
 .flower-foto-1 {
@@ -186,6 +186,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   row-gap: 2rem;
+  column-gap: 3rem;
   position: relative;
 }
 
@@ -235,7 +236,7 @@ p {
 
 .button-container {
   text-align: center;
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 
 .palm, .strelitzia {
@@ -270,4 +271,118 @@ p {
 .btn-right {
   transform: translate(125%, -50%);
   right: 0;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+  background-color: #FEBDAB;
+  padding: 6rem 0;
+}
+
+.pick-and-feed {
+  background-color: rgba(253, 253, 255, 0.52);
+  max-width: 116.1rem;
+  padding: 5rem 6rem;
+  border-radius: 20px;
+}
+
+.pick-and-feed-intro {
+  margin-bottom: 4rem;
+}
+
+.pick-and-feed-intro h2 {
+  color: #FE9013;
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.pick-and-feed-intro h3 {
+  font-size: 2.4rem;
+  color: #333B41;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.second-last {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333B41;
+  margin-bottom: 1rem;
+}
+
+.last {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333B41;
+}
+
+.pick-and-feed-desc h2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: #333B41;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 13rem;
+  padding: 4rem 0;
+}
+
+.card {
+  width: 16.8rem;
+}
+
+.card-image-container {
+  background-color: #fff;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+  width: 16.8rem;
+  height: 16.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333B41;
+}
+
+.card-button-container {
+  text-align: center;
+}
+
+.card-button {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1.5rem 5rem;
+  border: none;
+  border-radius: 25px;
+}
+
+.arrow-relative {
+  position: relative;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow-left {
+  transform: translate(-200%, -50%);
+}
+
+.arrow-right {
+  transform: translate(200%, -50%);
 }
