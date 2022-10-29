@@ -388,6 +388,13 @@ p {
 }
 
 /* SECTION 5 */
+.section-5 {
+  padding: 10rem 0;
+  background-image: url('../../assets/leaf-photo.png');
+  background-repeat: no-repeat;
+  background-position: 100% 120%;
+}
+
 .testimonial-card {
   max-width: 26.8rem;
   border: 2px solid black;
@@ -405,7 +412,7 @@ p {
 .testimonial-info {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -430,6 +437,109 @@ p {
 .testimonial-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 1rem;
-  justify-items: center;
+  margin: 2rem 0;
+  column-gap: 3rem;
+}
+
+.carousel {
+  width: 59.9rem;
+  height: 8px;
+  border: 0.05px solid #FE9013;
+  border-radius: 9px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.carousel-active {
+  background-color: #F9804B;
+  width: 11.519rem;
+  height: 100%;
+}
+
+.testimonial-button {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 9px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1.5rem 8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* FOOTER - FINAL SECTION */
+footer {
+  background-color: #111115;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+footer .logo-container {
+  margin-bottom: 6rem;
+}
+
+.donate-btn-container {
+  margin-bottom: 4rem;
+}
+
+.btn-donate {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  color: #fff;
+  padding: 1.5rem 5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 9px;
+}
+
+footer h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 116.1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem 0;
+}
+
+.navigation-footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.subscribe h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.subscribe input {
+  max-width: 22.8rem;
+  height: 4.2rem;
+  border: 2px solid #FA6F32;
+  background: transparent;
+  padding: 0 1rem;
+}
+
+.subscribe input::placeholder {
+  color: #BDBDBD;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.submit-btn {
+  color: #BDBDBD;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 3rem;
+  margin-left: 0.5rem;
 }
