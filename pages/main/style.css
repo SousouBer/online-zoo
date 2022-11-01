@@ -236,12 +236,27 @@ p {
 }
 
 .pet {
-  max-width: 36.6rem;
+  /* max-width: 36.6rem; */
   border: 1px solid #FA6F32;
   border-radius: 5px;
 }
 
+.pet-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet:hover .pet-img {
+  transform: scale(1.02732240437);
+}
+
+.pet:hover .pet-info {
+  background-color: #c4c4c4;
+}
+
 .pet-img {
+  transition: all 0.3s ease;
   width: 100%;
 }
 
@@ -259,11 +274,27 @@ p {
   padding: 1rem;
 } */
 
+.banana-bamboo-wrapper {
+  position: relative;
+}
+
+.banana-icon {
+  z-index: 2;
+}
+
+.green-bamboo {
+  position: absolute;
+  top: -1px;
+  left: 4px;
+  z-index: -1;
+}
+
 .pet-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  transition: all 0.3s ease;
 }
 
 .choose-pet {
@@ -512,6 +543,11 @@ p {
   background-color: #F9804B;
   width: 11.519rem;
   height: 100%;
+  cursor: pointer;
+}
+
+.carousel-active:hover {
+  background-color: #f9809f;
 }
 
 .testimonial-button {
@@ -523,6 +559,12 @@ p {
   padding: 1.5rem 8rem;
   font-size: 1.6rem;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonial-button:hover {
+  color: #000;
 }
 
 /* FOOTER - FINAL SECTION */
@@ -582,7 +624,7 @@ footer h5 {
   font-size: 2.4rem;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .subscribe input {
@@ -603,8 +645,10 @@ footer h5 {
   color: #BDBDBD;
   font-size: 1.6rem;
   font-weight: 400;
-  padding: 1rem 3rem;
+  padding: 0.9rem 3.5rem;
   margin-left: 0.5rem;
+  font-family: inherit;
+  border-radius: 5px;
 }
 
 .facebook, .twitter, .instagram, .youtube {
@@ -653,4 +697,8 @@ footer h5 {
 
 .contact-icon-container:hover {
   background-color: transparent;
+}
+
+.subscribe input {
+  color: #fff;
 }

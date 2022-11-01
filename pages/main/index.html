@@ -17,7 +17,7 @@
   <body>
     <div class="fist-content">
       <header>
-        <nav class="main-nav">
+        <nav id="nav" class="main-nav">
           <a class="logo-link" href="/online-zoo/pages/main/index.html">
             <div class="logo-container">
               <h1>Petstory online</h1>
@@ -80,79 +80,88 @@
         <div class="pets">
           <div class="pet">
             <div class="pet-img-container">
-              <img class="pet-img" src="../../assets/panda.png" alt="">
+              <img class="pet-img" src="../../assets/panda.png" alt="Panda">
             </div>
             <div class="pet-info">
               <div class="pet-description">
                 <h4>giant Pandas</h4>
                 <p>Native to Southwest China</p>
               </div>
-              <img src="../../assets/Vector.png" alt="">
+              <div class="banana-bamboo-wrapper">
+                <img class="banana-icon" src="../../assets/Vector.png" alt="Banana">
+                <img class="green-bamboo" src="../../assets/green-bamboo.png" alt="Green bamboo">
+              </div>
             </div>
           </div>
 
           <div class="pet">
             <div class="pet-img-container">
-              <img class="pet-img" src="../../assets/panda.png" alt="">
+              <img class="pet-img" src="../../assets/eagle.png" alt="Eagle">
             </div>
             <div class="pet-info">
               <div class="pet-description">
-                <h4>giant Pandas</h4>
-                <p>Native to Southwest China</p>
+                <h4>Eagles</h4>
+                <p>Native to South America</p>
               </div>
-              <img src="../../assets/Vector.png" alt="">
+              <img src="../../assets/meet-fish_icon.png" alt="meat">
             </div>
           </div>
 
           <div class="pet">
             <div class="pet-img-container">
-              <img class="pet-img" src="../../assets/panda.png" alt="">
+              <img class="pet-img" src="../../assets/gorila.png" alt="gorila">
             </div>
             <div class="pet-info">
               <div class="pet-description">
-                <h4>giant Pandas</h4>
-                <p>Native to Southwest China</p>
+                <h4>Gorilas</h4>
+                <p>Native to Congo</p>
               </div>
-              <img src="../../assets/Vector.png" alt="">
+              <div class="banana-bamboo-wrapper">
+                <img class="banana-icon" src="../../assets/Vector.png" alt="Banana">
+                <img class="green-bamboo" src="../../assets/green-bamboo.png" alt="Green bamboo">
+              </div>
             </div>
           </div>
 
           <div class="pet">
             <div class="pet-img-container">
-              <img class="pet-img" src="../../assets/panda.png" alt="">
+              <img class="pet-img" src="../../assets/sloth.png" alt="sloth">
             </div>
             <div class="pet-info">
               <div class="pet-description">
-                <h4>giant Pandas</h4>
-                <p>Native to Southwest China</p>
+                <h4>Two-toed Sloth</h4>
+                <p>Mesoamerica, South America</p>
               </div>
-              <img src="../../assets/Vector.png" alt="">
+              <div class="banana-bamboo-wrapper">
+                <img class="banana-icon" src="../../assets/Vector.png" alt="Banana">
+                <img class="green-bamboo" src="../../assets/green-bamboo.png" alt="Green bamboo">
+              </div>
             </div>
           </div>
 
           <div class="pet">
             <div class="pet-img-container">
-              <img class="pet-img" src="../../assets/panda.png" alt="">
+              <img class="pet-img" src="../../assets/cheetah.png" alt="cheetah">
             </div>
             <div class="pet-info">
               <div class="pet-description">
-                <h4>giant Pandas</h4>
-                <p>Native to Southwest China</p>
+                <h4>cheetahs</h4>
+                <p>Native to Africa</p>
               </div>
-              <img src="../../assets/Vector.png" alt="">
+              <img src="../../assets/meet-fish_icon.png" alt="meat">
             </div>
           </div>
 
           <div class="pet">
             <div class="pet-img-container">
-              <img class="pet-img" src="../../assets/panda.png" alt="">
+              <img class="pet-img" src="../../assets/penguin.png" alt="penguin">
             </div>
             <div class="pet-info">
               <div class="pet-description">
-                <h4>giant Pandas</h4>
-                <p>Native to Southwest China</p>
+                <h4>Penguins</h4>
+                <p>Native to Antarctica</p>
               </div>
-              <img src="../../assets/Vector.png" alt="">
+              <img src="../../assets/meet-fish_icon.png" alt="meat">
             </div>
           </div>
           <button class="btn-left">&#x2190</button>
@@ -200,7 +209,9 @@
               </div>
             </div>
             <div class="card-button-container">
-              <button class="card-button">Feed a friend now</button>
+              <a href="./donate/index.html" target="_blank">
+                <button class="card-button">Feed a friend now</button>
+              </a>
             </div>
           </div>
         </div>
@@ -293,16 +304,20 @@
     <footer>
       <div class="footer-container">
         <div class="donate-and-contact">
-          <div class="logo-container">
-            <h2>Petstory online</h2>
-            <img
-              class="bamboo-icon"
-              src="../../assets/bamboo.png"
-              alt="Bamboo icon"
-            />
-          </div>
+          <a href="#nav">
+            <div class="logo-container">
+              <h2>Petstory online</h2>
+              <img
+                class="bamboo-icon"
+                src="../../assets/bamboo.png"
+                alt="Bamboo icon"
+              />
+            </div>
+          </a>
           <div class="donate-btn-container">
-           <button class="btn-donate">Donate for volunteers</button>
+            <a href="./donate/index.html" target="_blank">
+              <button class="btn-donate">Donate for volunteers</button>
+            </a>
           </div>
           <div class="contacts">
             <!-- <h5><i class="facebook fa-brands fa-facebook"></i>Facebook</h5>
@@ -345,16 +360,17 @@
         </div>
         <div class="navigation-footer">
           <ul class="main-nav-list">
-            <li>About</li>
-            <li>Map</li>
-            <li>Zoos</li>
-            <li>Contact us</li>
+            <a href="../main/index.html"><li class="about">About</li></a>
+            <a href="#"><li>Map</li></a>
+            <a href="#"><li>Zoos</li></a>
+            <a href="#"><li>Contact us</li></a>
           </ul>
         </div>
         <div class="subscribe">
+          <div class="subscribe-wrapper"></div>
           <h3>Subscribe to our news</h3>
           <input type="email" placeholder="Enter your email">
-          <button type="button" class="submit-btn">Submit</button>
+          <button type="submit" class="submit-btn" disabled>Submit</button>
         </div>
       </div>
     </footer>
