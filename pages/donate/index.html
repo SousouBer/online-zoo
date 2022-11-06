@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="/online-zoo/pages/main/style.css">
   <title>Donate page</title>
 </head>
@@ -56,18 +60,20 @@
         </div>
         <div class="amount-inputs">
           <span>Amount</span>
-          <div class="yellow-inputs">
-            <input name="answer" id="5000" type="radio">
-            <input name="answer" id="2000" type="radio">
-            <input name="answer" id="1000" type="radio">
-            <input name="answer" id="500" type="radio">
-            <input name="answer" id="250" type="radio">
-            <input name="answer" id="100" type="radio">
-            <input name="answer" id="50" type="radio">
-            <input name="answer" id="25" type="radio">
+          <div class="inputs-wrapper">
+            <div class="yellow-inputs">
+              <input name="answer" id="5000" type="radio">
+              <input name="answer" id="2000" type="radio">
+              <input name="answer" id="1000" type="radio">
+              <input name="answer" id="500" type="radio">
+              <input name="answer" id="250" type="radio">
+              <input name="answer" id="100" type="radio">
+              <input name="answer" id="50" type="radio">
+              <input name="answer" id="25" type="radio">
+            </div>
           </div>
           <div class="inputs-value">
-            <label class="ao" for="5000">$5000</label>
+            <label for="5000">$5000</label>
             <label for="2000">$2000</label>
             <label for="1000">$1000</label>
             <label for="500">$500</label>
@@ -77,8 +83,101 @@
             <label for="25">$25</label>
           </div>
         </div>
+        <div class="type-input-section">
+          <div class="type-number-wrapper">
+            <input class="type-input" type="number" placeholder="Another amount">
+          </div>
+          <div class="monthly-once">
+            <div class="monthly">
+              <input type="radio" name="time" id="monthly">
+              <label for="monthly">Monthly</label>
+            </div>
+            <div class="once">
+              <input type="radio" name="time" id="once" checked>
+              <label for="once">Once</label>
+            </div>
+          </div>
+          <a href="#">
+            <button type="button" class="last-button">Feed a friend now</button>
+          </a>
+          <p>Share with your friends on social networks </p>
+        </div>
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="donate-and-contact">
+        <a href="#nav">
+          <div class="logo-container">
+            <h2>Petstory online</h2>
+            <img
+              class="bamboo-icon"
+              src="../../assets/bamboo.png"
+              alt="Bamboo icon"
+            />
+          </div>
+        </a>
+        <div class="donate-btn-container">
+          <a href="../donate/index.html" target="_blank">
+            <button class="btn-donate">Donate for volunteers</button>
+          </a>
+        </div>
+        <div class="contacts">
+          <!-- <h5><i class="facebook fa-brands fa-facebook"></i>Facebook</h5>
+          <h5><i class="twitter fa-brands fa-twitter"></i>Twitter</h5>
+          <h5><i class="instagram fa-brands fa-instagram"></i>Instagram</h5>
+          <h5><i class="youtube fa-brands fa-youtube"></i>Youtube</h5> -->
+          <div class="contact-container">
+            <div class="contact-icon-container">
+              <img class="contact-icon" src="../../assets/facebook.png" alt="Facebook">
+            </div>
+            <a href="https://www.facebook.com/RollingScopesSchool/" target="_blank">
+              <h5>Facebook</h5>
+            </a>
+          </div>
+          <div class="contact-container">
+            <div class="contact-icon-container">
+              <img class="contact-icon" src="../../assets/twitter.png" alt="Twitter">
+            </div>
+            <a href="https://twitter.com/rollingscopes" target="_blank">
+              <h5>Twitter</h5>
+            </a>
+          </div>
+          <div class="contact-container">
+            <div class="contact-icon-container">
+              <img class="contact-icon" src="../../assets/instagram.png" alt="Instagram">
+            </div>
+            <a href="https://www.instagram.com/rsschool_news/" target="_blank">
+              <h5>Instagram</h5>
+            </a>
+          </div>
+          <div class="contact-container">
+            <div class="contact-icon-container">
+              <img class="contact-icon" src="../../assets/youtube.png" alt="Youtube">
+            </div>
+            <a href="https://www.youtube.com/c/rollingscopesschool" target="_blank">
+              <h5>Youtube</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-footer">
+        <ul class="main-nav-list">
+          <a href="../main/index.html"><li class="about">About</li></a>
+          <a href="#"><li>Map</li></a>
+          <a href="#"><li>Zoos</li></a>
+          <a href="#"><li>Contact us</li></a>
+        </ul>
+      </div>
+      <div class="subscribe">
+        <div class="subscribe-wrapper"></div>
+        <h3>Subscribe to our news</h3>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit" class="submit-btn" disabled>Submit</button>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
