@@ -43,7 +43,7 @@ a {
   margin-right: 5rem;
 }
 
-.about {
+.highlight {
   color: #F9804B;
 }
 
@@ -611,7 +611,7 @@ footer h5 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 5.5rem;
+  padding-top: 4rem;
   padding-bottom: 5.5rem;
   gap: 1.5rem;
 }
@@ -629,7 +629,7 @@ footer h5 {
 }
 
 .subscribe input {
-  max-width: 22.8rem;
+  width: 22.8rem;
   height: 4.2rem;
   border: 2px solid #FA6F32;
   background: transparent;
@@ -643,13 +643,21 @@ footer h5 {
 }
 
 .submit-btn {
-  color: #BDBDBD;
+  background-color: #F1F3F2;
+  color: #000;
   font-size: 1.6rem;
   font-weight: 400;
   padding: 0.9rem 3.5rem;
   margin-left: 0.5rem;
   font-family: inherit;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 12.9rem;
+}
+
+.submit-btn:hover {
+  box-shadow: inset 0 0 0 1px #333B41;
 }
 
 .facebook, .twitter, .instagram, .youtube {
@@ -704,6 +712,10 @@ footer h5 {
   color: #fff;
 }
 
+.subscribe {
+  padding-left: 1rem;
+}
+
 /* DONATE PAGE */
 
 .header-donate {
@@ -717,7 +729,7 @@ footer h5 {
 
 .pick-and-feed-donate {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-  padding: 4rem 0 18rem 0;
+  padding: 4rem 0 19rem 0;
 }
 
 .donate-heading {
@@ -737,12 +749,12 @@ footer h5 {
   font-size: 3.6rem;
   font-weight: 400;
   color: #FE9013;
-  margin: 5rem 0;
+  margin: 4rem 0 6.5rem 0;
 }
 
 .pick-a-friend {
   background: rgba(255, 255, 255, 0.52);
-  padding: 3rem 7rem;
+  padding: 4rem 9rem 0 9rem;
   text-align: center;
 }
 
@@ -757,11 +769,12 @@ footer h5 {
   color: #333B41;
   font-weight: 400;
   font-size: 2.4rem;
+  text-align: left;
 }
 
 .amount-number {
   font-size: 7.2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .amount-desc {
@@ -774,7 +787,8 @@ footer h5 {
   align-items: center;
   justify-content: center;
   gap: 7rem;
-  margin: 6rem 0;
+  margin-top: 6rem;
+  margin-bottom: 4.5rem;
 }
 
 .amount-info {
@@ -873,6 +887,7 @@ footer h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 2.8rem;
 }
 
 .amount-inputs {
@@ -932,7 +947,7 @@ input[type=number] {
 }
 
 .type-input-section {
-  padding: 5rem 1rem;
+  padding: 5.5rem 1rem 5rem 1rem;
 }
 
 .type-input-section input[type='radio'] {
@@ -970,7 +985,7 @@ input[type=number] {
 }
 
 .monthly-once {
-  margin: 3.5rem 0;
+  margin: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1001,6 +1016,6 @@ input[type=number] {
 
 .type-input-section p {
   color: #333B41;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
