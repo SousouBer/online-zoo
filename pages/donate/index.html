@@ -25,10 +25,10 @@
         </div>
       </a>
       <ul class="main-nav-list">
-        <a href="../main/index.html"><li class="about">About</li></a>
+        <a href="../main/index.html"><li>About</li></a>
         <a href="#"><li>Map</li></a>
         <a href="#"><li>Zoos</li></a>
-        <a href="../donate/index.html" target="_blank"><li>Donate</li></a>
+        <a href="../donate/index.html" target="_blank"><li class="highlight">Donate</li></a>
         <a href="#"><li>Contact us</li></a>
       </ul>
     </nav>
@@ -84,22 +84,22 @@
           </div>
         </div>
         <div class="type-input-section">
-          <div class="type-number-wrapper">
-            <input class="type-input" type="number" placeholder="Another amount">
-          </div>
-          <div class="monthly-once">
-            <div class="monthly">
-              <input type="radio" name="time" id="monthly">
-              <label for="monthly">Monthly</label>
+          <form>
+            <div class="type-number-wrapper">
+              <input class="type-input" type="number" placeholder="Another amount" max="9999" required>
             </div>
-            <div class="once">
-              <input type="radio" name="time" id="once" checked>
-              <label for="once">Once</label>
+            <div class="monthly-once">
+              <div class="monthly">
+                <input type="radio" name="time" id="monthly">
+                <label for="monthly">Monthly</label>
+              </div>
+              <div class="once">
+                <input type="radio" name="time" id="once" checked>
+                <label for="once">Once</label>
+              </div>
             </div>
-          </div>
-          <a href="#">
-            <button type="button" class="last-button">Feed a friend now</button>
-          </a>
+            <button type="submit" class="last-button">Feed a friend now</button>
+          </form>
           <p>Share with your friends on social networks </p>
         </div>
       </div>
@@ -109,7 +109,7 @@
   <footer>
     <div class="footer-container">
       <div class="donate-and-contact">
-        <a href="#nav">
+        <a href="../main/index.html">
           <div class="logo-container">
             <h2>Petstory online</h2>
             <img
@@ -174,8 +174,10 @@
       <div class="subscribe">
         <div class="subscribe-wrapper"></div>
         <h3>Subscribe to our news</h3>
-        <input type="email" placeholder="Enter your email">
-        <button type="submit" class="submit-btn" disabled>Submit</button>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
       </div>
     </div>
   </footer>
